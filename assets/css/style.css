@@ -15,15 +15,18 @@ body {
     color: #ffffff;
 }
 
+/* Allows for the h1 and the div holding the links to be on the same row */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Set font color to gray within the span */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Set spacing and font of the ul */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +35,29 @@ body {
     font-size: 20px;
 }
 
+/* No item marker shown for list items inside the unordered list*/
 .header div ul {
     list-style-type: none;
 }
 
+/* Set items side-by-side and set spacing */
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Set links to white and remove underline */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Set p element font to 16px*/
 p {
     font-size: 16px;
 }
 
+/* Set dimensions and background of divs with class "hero"  */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +67,101 @@ p {
     background-position: center;
 }
 
+/* Place img with class "float-left" on the left side of the container. Set margin to 25px.*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Place img with class "float-right" on the right side of the container. Set margin to 25px.*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* Set the section with the class of "content" to occupy 75% of the container.*/
+/* Set display to inline-block to allow the section with the class of "benefits" to be to the side*/
+/* Set margin-left to 20px */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Refactored below */
+/* .online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+} */
+
+/* For the elements containing the classes below, set margin, padding, height, font-family, font-color, and background-color  */
+.search-engine-optimization, 
+.online-reputation-management,
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Refactored below */
+/* .search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+} */
+
+/* All image elements descendant of the section with the class of "content", set max-height to 200px */
+.content img {
+    max-height: 200px;
+}
+
+/* All h2 elements descendant of the section with the class of "content", set max-height to 200px */
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Set margin-right to 20px */
+/* Set the section with the class of "benefits" to occupy 20% of the container.*/
+/* Set floating elements (descendants) to follow parent and set section to the right of the container. */
+/* Set width, height, font-family, and background-color */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,7 +173,8 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* Refactored below */
+/* .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -132,69 +220,39 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
+} */
 
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+/* All div elements descendant of the section with the class of "beefits", set margin-bottom and font-color. */
+.benefits div {
+    margin-bottom: 32px;
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+/* All h3 elements descendant of the section with the class of "benefits", set margin-bottom and center text. */
+.benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+/* All img elements descendant of the section with the class of "benefits", set display to block (inline is default)*/
+/* Set margin and max-width of image */
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Set padding, floating elements (descendants) to follow parent, font-family, center text, and set font-size */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-
-.footer h2 {
+    /* Set font-size for all elements inside the footer */
     font-size: 20px;
 }
+
+/* Refactored above  */
+/* .footer h2 {
+    font-size: 20px;
+} */
