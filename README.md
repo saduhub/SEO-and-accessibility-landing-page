@@ -1,4 +1,4 @@
-# 01 HTML, CSS, and Git - Code Refactor
+# SEO and accessibility landing page
 
 ## Description
 

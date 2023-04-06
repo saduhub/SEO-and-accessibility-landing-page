@@ -8,6 +8,8 @@ body {
     background-color: #d9dcd6;
 }
 
+/* Header styles start*/
+/* Set header spacing */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -27,7 +29,7 @@ body {
 }
 
 /* Set spacing and font of the ul */
-.header div {
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -36,15 +38,16 @@ body {
 }
 
 /* No item marker shown for list items inside the unordered list*/
-.header div ul {
+.header nav ul {
     list-style-type: none;
 }
 
 /* Set items side-by-side and set spacing */
-.header div ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+/* Header styles end */
 
 /* Set links to white and remove underline */
 a {
@@ -223,7 +226,7 @@ p {
 } */
 
 /* All div elements descendant of the section with the class of "beefits", set margin-bottom and font-color. */
-.benefits div {
+.benefits section {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -248,11 +251,8 @@ p {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    /* Set font-size for all elements inside the footer */
-    font-size: 20px;
 }
 
-/* Refactored above  */
-/* .footer h2 {
+.footer h4 {
     font-size: 20px;
-} */
+}
